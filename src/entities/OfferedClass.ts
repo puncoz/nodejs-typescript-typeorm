@@ -1,0 +1,22 @@
+import {
+    Column,
+    Entity,
+    ManyToMany,
+    PrimaryColumn,
+}                  from "typeorm"
+import { Student } from "./Student"
+
+@Entity()
+export class OfferedClass {
+    @PrimaryColumn({length: 10})
+    code: string
+
+    @Column({length: 100})
+    name: string
+
+    @Column({type: "int"})
+    hours: number
+
+    @ManyToMany(type => Student, student => student.classes)
+    students: Student[]
+}

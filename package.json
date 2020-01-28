@@ -1,0 +1,40 @@
+{
+  "name": "nodejs-typescript-typeorm",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "commonjs",
+  "scripts": {
+    "test": "cd test && yarn test",
+    "build": "tsc",
+    "watch": "tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/puncoz/nodejs-typescript-typeorm.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/puncoz/nodejs-typescript-typeorm/issues"
+  },
+  "homepage": "https://github.com/puncoz/nodejs-typescript-typeorm#readme",
+  "devDependencies": {
+    "@types/js-yaml": "^3.12.2",
+    "@types/node": "^13.5.0",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5"
+  },
+  "dependencies": {
+    "fs-extra": "^8.1.0",
+    "js-yaml": "^3.13.1",
+    "reflect-metadata": "^0.1.13",
+    "sqlite3": "^4.1.1",
+    "typeorm": "^0.2.22"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "description": ""
+}
